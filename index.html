@@ -458,6 +458,75 @@
                 text-align: center;
             }
         }
+        /*新着情報*/
+        .news{
+            max-width: 960px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+        .news-title{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            margin: 0 auto 30px;
+            padding-bottom: 10px;
+            position: relative;
+            text-align: center;
+        }
+        .news-title:after{
+            position: absolute;
+            bottom:-2px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-bottom: 2px solid #444;
+            content:"";
+            width:100px;
+        }
+        .news-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .news-item{
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            align-items: center;
+        }
+        .news-date{
+            display: inline-block;
+            min-width: 110px;
+            color: #999;
+            margin-right: 20px;
+        }
+        .news-text{
+            flex: 1;
+            color: #444;
+            text-decoration: none;
+            display: block;
+        }
+        .news-text:hover{
+            color: #999;
+        }
+        .news-item:hover .news-text{
+            color: #999;
+        }
+        @media screen and (max-width: 960px){
+            .news{
+                margin: 0 auto 50px;
+            }
+            .news-item{
+                flex-wrap: wrap;
+            }
+            .news-date{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
         /*フッター*/ /*注釈権利*/
         .footer{
             border-top: 1px solid #ccc;
@@ -525,6 +594,26 @@
 <li><a href="#"><img src="images/P1000295.jpg" alt="image01" width="960" height="300" /></a></li>
 <li><img src="images/P1000869.jpg" alt="" width="960" height="300" /></li>
 <li><a href="#"><img src="images/P1000180.jpg" alt="image01" /></a></li>
+</ul>
+</div>
+
+<!--新着情報-->
+<div class="news">
+<div class="news-title">新着情報</div>
+<ul class="news-list">
+<li class="news-item">
+<span class="news-date">2026年2月10日</span>
+<a href="手ぶらOK！季節の花に癒される「小原流いけばな」体験【初心者歓迎】
+https://www.street-academy.com/myclass/209660?conversion_name=direct_message&tracking_code=fee67cf26c285c614c3669efa28a5ac7" class="news-text">ストアカでのいけばな教室体験募集中</a>
+</li>
+<li class="news-item">
+<span class="news-date">2025年11月18日</span>
+<a href="https://liliumflower.thebase.in/blog/2025/11/18/075910" class="news-text">Choosebase Shibuyaでのクリスマス商品販売スタート</a>
+</li>
+<li class="news-item">
+<span class="news-date">2025年7月28日</span>
+<a href="https://liliumflower.thebase.in/blog/2025/07/28/215612" class="news-text"> ギフトモールサイプレでの販売スタート</a>
+</li>
 </ul>
 </div>
 
