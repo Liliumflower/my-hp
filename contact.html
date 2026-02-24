@@ -1,11 +1,28 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>お問い合わせ - Liliumflower</title>
+    <style>
+        /* フォームを真ん中に寄せるための簡単なデザイン */
+        body { font-family: sans-serif; padding: 20px; text-align: center; }
+        .form-container { max-width: 800px; margin: 0 auto; }
+        iframe { width: 100%; min-height: 500px; border: none; }
+    </style>
 </head>
 <body>
     <h1>お問い合わせ</h1>
-    <iframe src="https://form1ssl.fc2.com/form/?id=269f9171f4bde700" frameborder="0" width="100%" height="800"></iframe>
+    <div class="form-container">
+        <iframe src="https://form1ssl.fc2.com/form/?id=269f9171f4bde700" frameborder="0" class="mailform" id="269f9171f4bde700"></iframe>
+        <script>
+        window.addEventListener('message', (e) => {
+            const w = e.data[0] + 'px';
+            const h = e.data[1] + 'px';
+            document.getElementById('269f9171f4bde700').style.width = w;
+            document.getElementById('269f9171f4bde700').style.height = h;
+        });
+        </script>
+    </div>
+    <p><a href="index.html">トップページに戻る</a></p>
 </body>
 </html>
