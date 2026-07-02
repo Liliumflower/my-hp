@@ -177,4 +177,115 @@
             border-bottom: 1px solid #dcdcdc;
             content: "";
             width: 40px;
+        }
+
+        /* テキストエリア */
+        .contentAbout-text {
+            max-width: 600px;
+            margin: 0 auto 50px;
+            font-size: 14px;
+            line-height: 2.2;
+            text-align: center;
+        }
+
+        /* ボタンデザイン */
+        .content-button {
+            margin-top: 40px;
+        }
+        .content-button > a {
+            display: inline-block;
+            border: 1px solid #544D49;
+            color: #544D49;
+            background: transparent;
+            padding: 15px 50px;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+        }
+        .content-button > a:hover {
+            background: #f4ece9;
+            border-color: #f4ece9;
+            color: #544D49;
+        }
+
+        /* フッター */
+        .footer {
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer-SNSicon {
+            margin: 0 auto 20px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .snsIcon { width: 30px; opacity: 0.7; }
+        .snsIcon:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div class="header">
+    <div class="header-title">
+        <a href="index.html"><img src="images/logo.lili.png" alt="Liliumflower" width="268" height="60" /></a>
+    </div>
+    
+    <!-- PC用ナビゲーション -->
+    <div class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pf.html">Collection<br><span class="sub-ja">プリザーブドフラワー</span></a></li>
+            <li><a href="ws.html">Experience<br><span class="sub-ja">お花教室</span></a></li>
+            <li><a href="fe.html">Wellness<br><span class="sub-ja">フラワーエッセンス</span></a></li>
+            <li><a href="contact.html">Contact<br><span class="sub-ja">お問い合わせ</span></a></li>
+        </ul>
+    </div>
+
+    <!-- スマホ用ハンバーガーメニュー -->
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown" />
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+            <ul class="nav-drawerList">
+                <li class="nav-drawerList-item"><a href="index.html">Home</a></li>
+                <li class="nav-drawerList-item"><a href="pf.html">Collection<br><span class="sub-ja">プリザーブドフラワー</span></a></li>
+                <li class="nav-drawerList-item"><a href="ws.html">Experience<br><span class="sub-ja">お花教室</span></a></li>
+                <li class="nav-drawerList-item"><a href="fe.html">Wellness<br><span class="sub-ja">フラワーエッセンス</span></a></li>
+                <li class="nav-drawerList-item"><a href="contact.html">Contact<br><span class="sub-ja">お問い合わせ</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- メインコンテンツ -->
+<div class="content">
+    <div class="content-title">Contact</div>
+
+    <!-- テキストエリア -->
+    <div class="contentAbout-text">
+        <p>オーダーメイド作品のご相談、お花教室や出張レッスン、<br>フラワーエッセンスに関するご質問など、<br>どのようなことでもどうぞお気軽にお声がけください。</p>
+        <p>お客様の想いに寄り添い、丁寧にご案内させていただきます。</p>
         
+        <!-- お問い合わせフォームへのボタン -->
+        <div class="content-button">
+            <!-- 以前のコードにあったFC2のフォームURLを設定しています -->
+            <a href="https://form1ssl.fc2.com/form/?id=269f9171f4bde700" target="_blank" rel="noopener noreferrer">Inquiry Form</a>
+        </div>
+    </div>
+</div>
+
+<!-- フッター -->
+<div class="footer">
+    <ul class="footer-SNSicon">
+        <li><a href="#"><img src="images/icon-ig.svg" class="snsIcon" alt="Instagram" /></a></li>
+    </ul>
+    <div class="footer-copyright">Copyright &copy; 2026 liliumflower, All Right Reserved.</div>
+</div>
+
+</body>
+</html>
