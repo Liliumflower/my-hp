@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Liliumflower</title>
+    <style>
+        /* サイト全体の基本設定（明朝体・チャコールグレー） */
+        body {
+            font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Shippori Mincho", serif;
+            color: #4a4a4a; /* 洗練されたチャコールグレー */
+            background-color: #ffffff;
+            line-height: 2;
+            letter-spacing: 0.08em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* コンテンツを中央に配置し、余白を持たせる */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* 見出しのスタイル */
+        h1, h2 {
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            letter-spacing: 0.15em;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 80px;
+        }
+
+        /* 区切り線 */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #cccccc;
+            margin: 30px auto;
+        }
+
+        /* 1. ブランドコンセプト部分 */
+        .concept-section {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .concept-title {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        /* 2. プロフィール部分 */
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .profile-image {
+            flex: 1 1 300px;
+            /* 画像のプレースホルダー（実際の画像パスに書き換えてください） */
+            background-color: #f5f5f5; 
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .profile-text {
+            flex: 1 1 400px;
+        }
+
+        .profile-name {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* 3. 資格・実績部分 */
+        .qualifications {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .qualifications ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .qualifications li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        /* スマホ表示用の調整 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 50px 20px;
+            }
+            .concept-title {
+                font-size: 18px;
+            }
+            .profile-section {
+                flex-direction: column;
+            }
+            .profile-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- ページタイトル -->
+        <h1>About</h1>
+
+        <!-- 1. ブランドコンセプト -->
+        <section class="concept-section">
+            <div class="concept-title">Timeless Beauty, Modern Healing</div>
+            <div class="divider"></div>
+            <p>
+                伝統と革新が調和する空間で、花を通じた多面的な癒しと学びを。<br>
+                Liliumflowerは、日常を美しく彩るデザインから、<br>
+                心を豊かにするエデュケーション、<br>
+                そして内面を整えるウェルネスまで。
+            </p>
+            <p>
+                現代を生きる方々へ、静かな贅沢とくつろぎの時間をお届けする<br>
+                総合フラワーウェルネスブランドです。
+            </p>
+        </section>
+
+        <!-- 2. ご挨拶とプロフィール -->
+        <section class="profile-section">
+            <!-- プロフィール画像（src="ご自身の画像ファイル名" に変更してください） -->
+            <img src="profile-image.jpg" alt="Yuriko Jyouchi" class="profile-image">
+            
+            <div class="profile-text">
+                <span class="profile-name">Yuriko Jyouchi</span>
+                <p>
+                    大学卒業後に勤めた会社で「いけばな」と出会ったことが、私の花との歩みの始まりでした。
+                </p>
+                <p>
+                    その後、IT企業などで忙しい日々を送る中で、花がもたらす「静寂と癒し」の力に幾度となく救われました。その奥深い魅力に導かれるように大手生花店へ転職し、数多くの花束やアレンジメント制作を経験。自身のライフスタイルの変化を機に、オンラインでのフラワーブティックとして独立いたしました。
+                </p>
+                <p>
+                    花を飾る美しさだけでなく、心身を整える「内面からのアプローチ」も大切にしたいという想いから、2019年にはニールズヤード ホリスティックスクールにてフラワーエッセンスの講師資格を取得。
+                </p>
+                <p>
+                    目まぐるしく変化する現代だからこそ、花を通じて「心豊かな時間」と「癒し」をお届けし、皆様の日常にそっと寄り添う存在でありたいと願っています。
+                </p>
+
+                <!-- 3. 資格・実績 -->
+                <div class="qualifications">
+                    <ul>
+                        <li>・小原流一級脇家元教授</li>
+                        <li>・ニールズヤード ホリスティックスクール フラワーエッセンス講師</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
