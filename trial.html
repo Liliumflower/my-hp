@@ -204,6 +204,14 @@
             background-color: #dcdcdc;
             margin: 40px auto;
         }
+/* 追加：メイン画像のレスポンシブ対応 */
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* お好みで。少し角を丸くして優しい印象にします */
+    margin-top: 20px;
+}
 
         /* 各セクション共通 */
         .trial-section {
@@ -312,10 +320,17 @@
         }
 
         @media (max-width: 768px) {
-            .hero-title { font-size: 20px; }
-            .trial-container { padding: 20px 20px 60px; }
-            .btn-line { width: 80%; box-sizing: border-box; padding: 18px 20px; }
-        }
+    .hero-title { font-size: 20px; }
+    .trial-container { padding: 20px 20px 60px; }
+    .btn-line { width: 80%; box-sizing: border-box; padding: 18px 20px; }
+    
+    /* ↓ここを追加：スマホ画面ではロゴを少し縮小してメニューとの衝突を防ぐ */
+    .header-title img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
     </style>
 </head>
 
