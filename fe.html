@@ -196,10 +196,10 @@
             margin-bottom: 20px;
         }
         
-        /* 小見出し（★の代わり） */
+        /* 小見出し */
         .sub-heading {
             font-size: 16px;
-            margin-top: 40px;
+            margin-top: 50px;
             margin-bottom: 15px;
             letter-spacing: 0.1em;
             border-bottom: 1px solid #f0f0f0;
@@ -209,7 +209,8 @@
 
         /* ボタンデザイン */
         .content-button {
-            margin-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .content-button > a {
             display: inline-block;
@@ -221,14 +222,16 @@
             letter-spacing: 0.1em;
         }
         .content-button > a:hover {
-            background: #f4ece9;
-            border-color: #f4ece9;
+            background: #f9f8f7;
+            border-color: #544D49;
             color: #544D49;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
         }
 
         /* スキル・情報セクション */
         .contentAbout-info {
-            margin-top: 50px;
+            margin-top: 60px;
             padding-top: 30px;
             border-top: 1px solid #f0f0f0;
         }
@@ -244,6 +247,26 @@
             list-style: none;
             padding: 0;
             color: #666;
+        }
+        
+        /* パートナーシップロゴ（バナー型）の美しい見せ方 */
+        .partnership-logo {
+            margin-top: 20px;
+        }
+        .partnership-logo a {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .partnership-logo a:hover {
+            opacity: 0.7;
+            transform: translateY(-2px);
+        }
+        .partnership-logo img {
+            width: 240px;
+            max-width: 100%;
+            height: auto;
+            vertical-align: bottom;
+            border-radius: 2px;
         }
 
         /* スマホ用レイアウト */
@@ -304,7 +327,7 @@
     <div class="nav">
         <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About<br><span class="sub-ja">ブランドについて</span></a></li>
+            <li><a href="about.html">About<br><span class="sub-ja">ブランドについて</span></a></li>
             <li><a href="pf.html">Collection<br><span class="sub-ja">プリザーブドフラワー</span></a></li>
             <li><a href="ws.html">Experience<br><span class="sub-ja">お花教室</span></a></li>
             <li><a href="fe.html">Wellness<br><span class="sub-ja">フラワーエッセンス</span></a></li>
@@ -338,39 +361,50 @@
     
     <div class="contentAbout">
         <div class="contentAbout-title">Wellness</div>
-        
+        <div class="sub-heading">Flower Essence  / フラワーエッセンスとは</div>
         <div class="contentAbout-text">
-            <p>フラワーエッセンスとは、アロマテラピーなどと同様に自然療法のひとつです。<br>ネガティブな感情に働きかけ、行動変容が期待できるエッセンス。36種類の植物の個性を観察し、人間に当てはめていくユニークな方法で、自分のことを知るツールとして注目されています。</p>
+            <p>フラワーエッセンスとは、アロマテラピーなどと同様に自然療法のひとつです。<br>お花のエネルギーがネガティブな感情に優しく働きかけ、心のバランスを整えてくれます。38種類の植物の個性を観察し、人間の感情に当てはめていくユニークなアプローチで、自分自身を深く知るツールとしても注目されています。</p>
             
-            <p>イギリスをはじめ各国では、病気療養中のメンタルケアや、非常時の心の痛みを和らげるために使うなどシチュエーションは様々です。<br>当サロンでは、普段の生活のなかで「達成したい目標がある」「悩みがあるが、その実態を知り解決に導きたい」など、各個人のテーマを決め、より身近な問題解決ツールとして利用できるようなコーチングを目指しています。</p>
+            <p>イギリスをはじめ各国では、メンタルケアや非常時の心の痛みを和らげるために使われるなど、そのシチュエーションは様々です。<br>当サロンでは、日々の暮らしの中で抱えるモヤモヤや、ふと立ち止まってしまいたい時に、ご自身の心と静かに向き合うためのサポートを行っております。日常に寄り添う「心の救急箱」として、本来のあなたを取り戻すお手伝いをいたします。</p>
             
-            <!-- ★マークを外し、上品な小見出しに変更 -->
-            <div class="sub-heading">Online Session / オンラインミニレッスン</div>
-            <p>お話を伺ったり、直感でフラワーカードを選んだりして、36種類のエッセンスの中から、今のあなたに最適なフラワーエッセンス選びのお手伝いをします。（※当サロンはヒーリングハーブス社のエッセンスを使用しております）</p>
-            
+            <!-- 1. noteへの誘導 -->
+            <div class="sub-heading">Flower Essence Journal / 私が私に還る、38の物語</div>
+            <p>オンラインセッションに先駆けて、noteにて38種類のエッセンスの物語を少しずつ綴っています。<br>「何かに焦ってしまう時」「自信をなくしてしまった時」——今のあなたの心にそっと寄り添う植物が、きっと見つかるはずです。</p>
             <div class="content-button">
-                <a href="https://note.com/lilium_flower" target="_blank" rel="noopener">Note「私が私に還る、38の物語」</a>
+                <a href="https://note.com/lilium_flower" target="_blank" rel="noopener">私が私に還る、38の物語を読む（note）</a>
+            </div>
+
+            <!-- 2. セッション（準備中）とLINEへの誘導 -->
+            <div class="sub-heading">Online Session / オンラインミニレッスン（準備中）</div>
+            <p>お話を伺いながら、直感で選ぶフラワーカードなどを通じて、38種類の中から今のあなたに最適なエッセンスを選ぶプライベートセッションです。<br>（※当サロンはヒーリングハーブス社のエッセンスを使用しております）</p>
+            <p><strong>現在、より深い癒しの時間をお届けするため、セッション内容を準備中です。</strong><br>開始のご案内や先行予約のお知らせは、公式LINEにてお届けいたします。ぜひご登録の上、楽しみにお待ちくださいませ。</p>
+            <div class="content-button">
+                <a href="https://lin.ee/〇〇〇" target="_blank" rel="noopener">公式LINEに登録して待つ</a>
             </div>
         </div>
 
-       <div class="contentAbout-info">
+        <!-- スキル・情報セクション -->
+        <div class="contentAbout-info">
             <div class="contentAbout-infoSection">
                 <div class="contentAbout-infoSectionTitle">Skill / 資格</div>
                 <ul class="contentAbout-infoSectionList">
                     <li>2020年 ホリスティックスクール ニールズヤード フラワーエッセンスコーチ</li>
                 </ul>
-                <!-- ここからニールズヤードのロゴを追加 -->
+                <!-- ニールズヤード公式バッジ（リンク付き） -->
                 <div class="partnership-logo">
-                    <img src="images/nealsyard-logo-w.jpg" alt="NEAL'S YARD Partnership" />
+                    <a href="https://www.nealsyard.co.jp/school/support/partnership_basic.html" target="_blank" rel="noopener" title="ニールズヤード パートナーシップ認定教室一覧">
+                        <img src="images/nealsyard-banner.png" alt="NEAL'S YARD Partnership" />
+                    </a>
                 </div>
-                <!-- ここまで -->
             </div>
         </div>
+    </div> <!-- contentAboutの閉じタグ -->
+</div> <!-- contentの閉じタグ -->
 
 <!-- フッター -->
 <div class="footer">
     <ul class="footer-SNSicon">
-        <li><a href="#"><img src="images/icon-ig.svg" class="snsIcon" alt="Instagram" /></a></li>
+        <li><a href="https://www.instagram.com/ikebana_lilium/" target="_blank" rel="noopener"><img src="images/icon-ig.svg" class="snsIcon" alt="Instagram" /></a></li>
     </ul>
     <div class="footer-copyright">Copyright &copy; 2026 liliumflower, All Right Reserved.</div>
 </div>
