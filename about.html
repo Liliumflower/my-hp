@@ -228,11 +228,22 @@
             flex: 1 1 400px;
         }
 
+        /* お名前の設定（大きく表示） */
         .profile-name {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 20px;
             display: block;
             letter-spacing: 0.1em;
+            color: #544D49;
+        }
+
+        /* 肩書きの設定（上品に小さく表示） */
+        .profile-title {
+            font-size: 14px;
+            color: #999;
+            margin-left: 20px;
+            letter-spacing: 0.05em;
+            font-weight: normal;
         }
 
         .qualifications {
@@ -261,6 +272,12 @@
             }
             .profile-section {
                 flex-direction: column;
+            }
+            /* スマホ時の肩書きの改行設定 */
+            .profile-title {
+                display: block;
+                margin-left: 0;
+                margin-top: 5px;
             }
         }
     </style>
@@ -326,11 +343,18 @@
 
     <!-- 2. ご挨拶とプロフィール -->
     <section class="profile-section">
-        <!-- プロフィール画像（index.htmlと同じパスに修正しました） -->
-        <img src="images/P1000856.jpg" alt="Yuriko Jyouchi" class="profile-image">
-    
+        <!-- プロフィール画像 -->
+        <img src="images/P1000917.jpg" alt="Yuriko Jyouchi" class="profile-image">
+        
+        <!-- テキスト部分を囲むタグ（復元しました） -->
         <div class="profile-text">
-            <span class="profile-name">Yuriko Jyouchi</span>
+            
+            <!-- お名前と肩書き -->
+            <div class="profile-name">
+                Yuriko Jyouchi
+                <span class="profile-title">Holistic Floral Designer</span>
+            </div>
+            
             <p>
                 大学卒業後に勤めた会社で「いけばな」と出会ったことが、私の花との歩みの始まりでした。
             </p>
@@ -351,7 +375,8 @@
                     <li>・ニールズヤード ホリスティックスクール フラワーエッセンス講師</li>
                 </ul>
             </div>
-        </div>
+            
+        </div> <!-- profile-textの閉じタグ -->
     </section>
 
 </div>
