@@ -267,6 +267,54 @@
         }
         .snsIcon { width: 30px; opacity: 0.7; }
         .snsIcon:hover { opacity: 1; }
+
+       /* 詳細ボタンのデザイン（上品な枠線スタイルに修正） */
+.ws-btn-wrap {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.btn-detail {
+    display: inline-block;
+    background-color: transparent; /* 背景を透明に */
+    color: #544D49 !important; /* 文字色をウォームグレーに */
+    border: 1px solid #544D49; /* 細い枠線を追加 */
+    padding: 16px 50px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-detail:hover {
+    background-color: #f9f8f7; /* マウスを乗せた時にほんのり背景色をつける */
+    color: #544D49 !important;
+    transform: translateY(-2px);
+}
+/* インスタグラム誘導エリア（コンテンツ内用） */
+.ig-link-wrap {
+    text-align: center;
+    margin-bottom: 80px; /* 次の「こどもいけばな」までの余白をしっかり取る */
+}
+.ig-link-wrap a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* アイコンと文字の美しい隙間 */
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.ig-link-wrap a:hover {
+    color: #544D49; /* マウスを乗せると少し濃い色に */
+}
+.snsIcon-inline {
+    width: 20px; /* 文字のサイズに合わせて少し小さめに調整 */
+    height: auto;
+}
+
+
     </style>
 </head>
 <body>
@@ -326,10 +374,19 @@
             <span class="sub-heading">Seasonal Lesson / 季節のお花教室</span>
             <p>1997年より小原流いけばなに親しみ、一級脇家元教授免許を取得いたしました。<br>花と向き合う時間は、日常の喧騒から離れ、自分自身と静かに対話する時間です。<br>初心者から上級者まで、四季折々の美しい植物に触れながら、心の中の「余白」を取り戻すようなひとときをご提供いたします。</p>
         </div>
+<!-- 詳細ページへのリンクボタン -->
+<div class="ws-btn-wrap">
+    <a href="trial.html" class="btn-detail">体験レッスンの詳細・ご予約はこちら</a>
+</div>
 
-            <ul class="footer-SNSicon">
-        <li><a href="https://www.instagram.com/ikebana_lilium/"><img src="images/icon-ig.svg" class="snsIcon" alt="Instagram" /></a></li>
-    </ul>
+         <!-- インスタグラム誘導エリア -->
+        <div class="ig-link-wrap">
+            <a href="https://www.instagram.com/ikebana_lilium/" target="_blank" rel="noopener noreferrer">
+                <img src="images/icon-ig.svg" class="snsIcon-inline" alt="Instagram" />
+                <span>公式インスタグラム</span>
+            </a>
+        </div>
+
 
         <!-- 2. こどもいけばなの案内 -->
         <div class="lesson-section">
